@@ -1,5 +1,6 @@
 
-// api key : 82005d27a116c2880c8f0fcb866998a0
+// api key : 7116ebb508ec53db3eea575af3280b35
+
 
 // SELECT ELEMENTS
 const iconElement = document.querySelector(".weather-icon");
@@ -18,7 +19,7 @@ weather.temperature = {
 // APP CONSTS AND VARS
 const KELVIN = 273;
 // API KEY
-const key = "82005d27a116c2880c8f0fcb866998a0";
+const key = "7116ebb508ec53db3eea575af3280b35";
 
 // CHECK IF BROWSER SUPPORTS GEOLOCATION
 if('geolocation' in navigator){
@@ -45,7 +46,7 @@ function showError(error){
 // GET WEATHER FROM API PROVIDER
 function getWeather(latitude, longitude){
     let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
-    
+
     fetch(api)
         .then(function(response){
             let data = response.json();
